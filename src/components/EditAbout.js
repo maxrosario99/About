@@ -1,19 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 
-const EditAbout = ({ about, showAbout, setShowAbout }) => {
+const EditAbout = ({ about, showAbout, setAbout, setShowAbout }) => {
   const [newAbout, setNewAbout] = useState("");
 
   function updateAbout(value) {
     setNewAbout(value);
   }
+  function onSubmit() {
+    setAbout(newAbout);
+
+    setShowAbout(!showAbout);
+  }
   return (
-    <div>
+    <div style={{ display: showAbout ? "block" : "none" }}>
       <form>
         <label>About</label>
-        <input>
+        <input
           placeholder={about}
           onChange={(e) => updateAbout(e.target.value)}
-        </input>
+        />
       </form>
     </div>
   );
