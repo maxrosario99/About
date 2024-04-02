@@ -20,6 +20,7 @@ const EditAbout = ({ about, showAbout, setAbout, setShowAbout }) => {
           onChange={(e) => updateAbout(e.target.value)}
         />
       </form>
+      <button onClick={onSubmit}>Save</button>
     </div>
   );
 };

@@ -10,7 +10,11 @@ const Layout = () => {
   return (
     <div>
       Layout
-      <AboutPage about={about} setAbout={setAbout} />
+      <AboutPage
+        about={about}
+        setShowAbout={setShowAbout}
+        setAbout={setAbout}
+      />
       <EditAbout
         showAbout={showAbout}
         setShowAbout={setShowAbout}
