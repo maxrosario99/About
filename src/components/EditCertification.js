@@ -1,7 +1,7 @@
 import React from "react";
 
 const EditCertification = ({
-  certification,
+  certifications,
   setCertifications,
   setShowCertifications,
   showCertifiations,
@@ -13,7 +13,7 @@ const EditCertification = ({
     <div style={{ display: showCertifiations ? "block" : "none" }}>
       <form>
         <label> Title </label>
-        <input>placeholder = {certification}</input>
+        <input placeholder={certifications[0].title} />
         <button onClick={onSubmit}> Save </button>
       </form>
     </div>

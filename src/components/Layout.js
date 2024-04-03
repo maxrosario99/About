@@ -45,13 +45,11 @@ const Layout = () => {
           return (
             <Certification
               certification={cert}
-              setCertifications={setCertifications}
+              showCertifications={showCertifiations}
+              setShowCertifications={setShowCertifications}
             />
           );
         })}
-        {/* <Certification certification={defaultCertification} />
-        <Certification certification={defaultCertification} />
-        <Certification certification={defaultCertification} /> */}
       </div>
       <EditCertification
         showCertifiations={showCertifiations}
@@ -59,23 +57,6 @@ const Layout = () => {
         certifications={certifications}
         setCertifications={setCertifications}
       />
-      {/* <AboutPage
-        about={about}
-        setShowAbout={setShowAbout}
-        setAbout={setAbout}
-        numClicks={numClicks}
-        setNumClicks={setNumClicks}
-      />
-      <EditAbout
-        showAbout={showAbout}
-        setShowAbout={setShowAbout}
-        setAbout={setAbout}
-        about={about}
-      />
-      <button onClick={() => setNumClicks(numClicks + 1)}>Click me</button>
-      <div>
-        <h4> Number of Clicks: {numClicks}</h4>
-      </div> */}
     </div>
   );
 };

@@ -11,7 +11,7 @@ const Certification = ({
       <h2>{certification.company}</h2>
       <h3>{certification.issue}</h3>
       <button
-        onClick={setShowCertifications(!showCertifications)}
+        onClick={() => setShowCertifications(!showCertifications)}
         className="edit-button"
       >
         Edit{" "}
