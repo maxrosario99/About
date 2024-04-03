@@ -1,6 +1,12 @@
 import React from "react";
 
-const AboutPage = ({ about, showAbout, setShowAbout }) => {
+const AboutPage = ({
+  about,
+  showAbout,
+  setShowAbout,
+  numClicks,
+  setNumClicks,
+}) => {
   return (
     <>
       <div>
